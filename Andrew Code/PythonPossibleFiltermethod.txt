@@ -1,0 +1,14 @@
+line = line.strip()
+    if not line:
+        continue
+    values = line.split()
+    if len(values) != 2:
+        continue
+    x, y = values
+    if not(x.isnumeric() and y.isnumeric()):
+        continue
+    print(x)
+    print(y)
+    newX = (float(x)*3.14)/180.0
+    xVals.append(newX)
+    yVals.append(float(y))
